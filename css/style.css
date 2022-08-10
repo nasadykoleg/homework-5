@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 100px;
+}
+
+.box:nth-child(1) {
+  background-color: green;
+  animation: animate1 4000ms infinite, animate2 4000ms infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(0px, 300px);
+  }
+
+  50% {
+    transform: translate(300px, 300px);
+  }
+
+  75% {
+    transform: translate(300px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: blue;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
